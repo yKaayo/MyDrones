@@ -1,0 +1,36 @@
+@media (width <= 1100px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+@media (width <= 770px) {
+  /* Navigation */
+  nav {
+    ul {
+      flex-wrap: wrap;
+      gap: 1.6rem;
+    }
+  }
+}
+
+@media (width <= 674px) {
+  /* Cards */
+  .cards {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+@media (width <= 425px) {
+  /* Container */
+  .container {
+    justify-content: center;
+
+    & h2 {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/* Container */
+.container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 30rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 1rem;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: 40%;
+
+  & h2 {
+    padding-right: 4rem;
+    color: var(--color-white);
+    text-align: center;
+  }
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem 2.5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+
+  & h3 {
+    color: var(--color-orange);
+  }
+
+  & p {
+    & span {
+      color: var(--color-orange);
+    }
+  }
+
+  & a {
+    padding: 1.6rem 0.8rem;
+    border: 0.2rem solid var(--color-orange);
+    border-radius: 0.4rem;
+    background-color: var(--color-orange);
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--color-orange);
+      background-color: var(--color-white);
+      transform: var(--transform);
+    }
+  }
+}

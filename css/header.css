@@ -1,0 +1,40 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color: var(--color-gray);
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    & h1 {
+        color: var(--color-white);
+
+        & span {
+            color: var(--color-orange);
+        }
+    }
+}
+
+/* Navigation */
+nav {
+    & ul {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+        & a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--color-orange);
+            }
+        }
+    }
+}
